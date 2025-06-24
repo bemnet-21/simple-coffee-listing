@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import Card from '@/components/Card'
+import { Coffee } from '@/interface'
 
-const index = () => {
-  const [datas, setData] = useState<any[]>([])
+const IndexPage = () => {
+  const [datas, setData] = useState<Coffee[]>([])
   const [active, setActive] = useState<boolean>(false)
   const activeButton = 'bg-gray-500 rounded-lg p-2'
 
@@ -38,7 +39,7 @@ const index = () => {
         <div className='grid grid-cols-1 gap-y-8 gap-x-4 md:grid-cols-3'>
           {
             datas.map((data) => (
-              <Card data={data} available={active}/>
+              <Card key={data.id} data={data} available={active}/>
             ))
           }
         </div>
@@ -47,4 +48,4 @@ const index = () => {
   )
 }
 
-export default index
+export default IndexPage

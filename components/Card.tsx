@@ -1,19 +1,6 @@
 import React from 'react'
+import { CardProps} from '@/interface'
 
-interface Coffee {
-    id: number
-    name: string
-    image: string
-    price: number
-    rating: number
-    voting: number
-    popular: boolean
-    available: boolean
-}
-interface CardProps {
-    data: Coffee
-    available: boolean
-}
 
 const Card: React.FC<CardProps> = ({data, available}) => {
   

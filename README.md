@@ -12,9 +12,6 @@
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
-      Solution
-    </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenge/simple-coffee-listing">
       Challenge
@@ -28,7 +25,6 @@
 
 - [Overview](#overview)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Built with](#built-with)
 - [Features](#features)
 - [Contact](#contact)
@@ -73,4 +69,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 ## Author
 
 - Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://github.com/bemnet-21)
+- GitHub [bemnet-21](https://github.com/bemnet-21)
