@@ -9,7 +9,7 @@ const Card: React.FC<CardProps> = ({data, available}) => {
     return (
             <section className='w-fit space-y-2 mx-auto'>
                 <div className='relative'>
-                    <img src={data.image} className='rounded-lg  transition-transform duration-500 cursor-pointer hover:scale-105'/>
+                    <img src={data.image} className='rounded-lg  transition-transform duration-500 cursor-pointer hover:scale-105' alt='coffee image'/>
                     {
                         data.popular ? ( 
                         <div className='bg-amber-300 w-20 rounded-full p-1 text-black text-center absolute top-2 left-2'>Popular</div>) : null
@@ -22,12 +22,12 @@ const Card: React.FC<CardProps> = ({data, available}) => {
                 </div>
                     {data.rating? (
                         <div className='flex items-center'>
-                            <img src='/assets/Star_fill.svg' />
+                            <img src='/assets/Star_fill.svg' alt='star'/>
                             <div>{data.rating}</div>
                         </div>
                     ) : (
                         <div>
-                            <img src='/assets/Star.svg' />
+                            <img src='/assets/Star.svg' alt='empty star'/>
                         </div>
                     )
                     }
